@@ -1,0 +1,760 @@
+{% load static %}
+<header _ngcontent-frontend-c264="" class="header ng-star-inserted">
+	<div class="container header__sticky">
+		<!---->
+		<div class="header__top">
+			<div class="header__aside ng-star-inserted">
+				<div class="header__module">
+					<div role="button" class="header__burger">
+						<svg class="header__icon header__icon_menu">
+							<use xlink:href="#icon_menu"></use>
+						</svg>
+					</div>
+					<!---->
+					<top-main-menu _nghost-frontend-c240="">
+						<div _ngcontent-frontend-c240="" class="header__gender-switch header__gender-switch_desktop"><span _ngcontent-frontend-c240="" class="header__gender ng-star-inserted "></span><span _ngcontent-frontend-c240="" class="header__gender ng-star-inserted"></span><span _ngcontent-frontend-c240="" class="header__gender ng-star-inserted"></span>
+							<!---->
+						</div>
+					</top-main-menu>
+				</div>
+			</div>
+			<!---->
+			<a class="header__logo" href="/"><img class="header__logo-icon" alt="ЦУМ - интернет-магазин одежды, обуви и аксессуаров ведущих мировых брендов" src="https://www.tsum.ru/assets/images/logo.svg"></a>
+			<div class="header__aside ng-star-inserted">
+				<div class="header__module header__module_position_right">
+
+					<div class="header__private" style="visibility: visible;">
+						{% if user.is_authenticated %}
+						<a rel="nofollow" href="#"   class="header__link ng-star-inserted">{{user.username}}<!----></a>
+						{% else %}
+						<a rel="nofollow" href="{% url 'mainapp:auth' %}"   class="header__link ng-star-inserted">Войти<!----></a>
+						{% endif %}
+						<!---->
+						<!---->
+					</div>
+					<diginetica-suggest class="ng-star-inserted">
+						<div class="header__search header__search_desktop">
+							<div class="header__search-wrap">
+								<div class="header__search-form">
+									<form novalidate="" action="/catalog/search" class="search ng-untouched ng-pristine ng-valid">
+										<div class="search__input">
+											<div class="field field_view_search field_type_text">
+												<label class="search__label">
+													<svg class="button__icon button__icon_find">
+														<use xlink:href="#icon_find"></use>
+													</svg>
+													<input type="text" name="q" autocomplete="off" maxlength="255" class="field__input" placeholder="Поиск">
+												</label>
+											</div>
+										</div>
+									</form>
+								</div>
+							</div>
+							<div class="suggest-box-inner">
+								<div class="suggest-box">
+									<div class="suggest-box__close"></div>
+									<div class="suggest-box__list">
+										<!---->
+									</div>
+								</div>
+								<!---->
+							</div>
+						</div>
+					</diginetica-suggest>
+					<!---->
+					<!---->
+
+					<header-cart _nghost-frontend-c218="">
+						<div _ngcontent-frontend-c218="" class="header__basket">
+							<a _ngcontent-frontend-c218="" title="Корзина" class="header__link header__link_basket" data-count="0" href="{% url 'mainapp:checkout' %}"><img _ngcontent-frontend-c218="" class="header__icon header__icon_basket" alt="Корзина" src="{% static 'icon-bag-header.svg'%} "></a>
+						</div>
+						<!---->
+					</header-cart>
+				</div>
+			</div>
+			<!---->
+		</div>
+		<!---->
+		<div class="header__nav ng-star-inserted">
+			<main-menu>
+				<div class="header__menu">
+					<div class="header__wrap header__wrap_level-1">
+						<div class="header__gender-switch header__gender-switch_mobile"><span class="header__gender header__gender_active">Женское<!----></span><span class="header__gender">Мужское<!----></span><span class="header__gender">Детское<!----></span></div>
+						<!---->
+						<div class="header__gender-menu header__gender-menu_active">
+							<!---->
+							<main-menu-desktop _nghost-frontend-c242="" class="ng-tns-c242-0 ng-star-inserted">
+								<ul _ngcontent-frontend-c242="" class="header__list header__list_desktop ng-tns-c242-0 ng-trigger ng-trigger-FadeInOut" style="opacity: 1;">
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Новинки" href="/catalog/sel/new-arrivals-women/">Новинки</a>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Бренды" href="/brand/">Бренды</a>
+										<div _ngcontent-frontend-c241="" class="header__subnav header__subnav-desctop ng-star-inserted" style="display: flex;">
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> ПО РАЗДЕЛАМ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Женская одежда" href="/brand/zhenskaya_odezhda-2493/">Женская одежда</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Женская обувь" href="/brand/obuv/">Женская обувь</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Женские сумки" href="/brand/sumki/">Женские сумки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Косметика" href="/brand/kosmetika-3326/">Косметика</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Интерьер" href="/brand/interier-19606/">Интерьер</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> TOП 20 </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Alexander McQueen" href="/brand/alexander_mcqueen.html">Alexander McQueen</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Balenciaga" href="/brand/balenciaga.html">Balenciaga</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Balmain" href="/brand/balmain.html">Balmain</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Bottega Veneta" href="/brand/bottega_veneta.html">Bottega Veneta</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Brunello Cucinelli" href="/brand/brunello_cucinelli-228833.html">Brunello Cucinelli</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Burberry" href="/brand/burberry.html">Burberry</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Chloé" href="/brand/chloe.html">Chloé</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Dolce &amp; Gabbana" href="/brand/dolce_gabbana.html">Dolce &amp; Gabbana</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Gianvito Rossi" href="/brand/obuv/gianvito_rossi.html">Gianvito Rossi</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Gucci" href="/brand/gucci.html">Gucci</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Jil Sander" href="/brand/jil_sander-167280.html">Jil Sander</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Loewe" href="/brand/loewe-437359.html">Loewe</a></li>
+													<!---->
+												</ul>
+											</div>
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_top">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Off-White" href="/brand/off_white-895495.html">Off-White</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Prada" href="/brand/prada.html">Prada</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Ralph Lauren" href="/brand/ralph_lauren-70279.html">Ralph Lauren</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Tom Ford" href="/brand/tom_ford.html">Tom Ford</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Valentino" href="/brand/valentino.html">Valentino</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Versace" href="/brand/versace.html">Versace</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="VETEMENTS" href="/brand/vetements-582189.html">VETEMENTS</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-banner ng-star-inserted">
+												<a _ngcontent-frontend-c241="" class="header__subnav-link ng-star-inserted" href="/brand/saint_laurent.html">
+													<picture _ngcontent-frontend-c241="">
+														<source _ngcontent-frontend-c241="" media="(max-width: 1024px)" srcset="/assets/images/empty.png"><img _ngcontent-frontend-c241="" role="presentation" class="header__subnav-img" src="https://st2.tsum.com/sig/714ea9f5bebabd1cc35f92db8f58211a/width/958/photos/8/2/8281d41dc532f1c676796874b4c4f3e9937adcb8.jpg" alt="Баннер Бренды" data-gtm-vis-first-on-screen-339085_1093="1358913" data-gtm-vis-recent-on-screen-339085_1093="1411573" data-gtm-vis-total-visible-time-339085_1093="400" data-gtm-vis-polling-id-339085_1093="63139"></picture>
+												</a>
+												<!---->
+											</div>
+											<!---->
+										</div>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Одежда" href="/catalog/odezhda-18413/">Одежда</a>
+										<div _ngcontent-frontend-c241="" class="header__subnav header__subnav-desctop ng-star-inserted" style="display: flex;">
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_bold">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Новинки" href="/catalog/odezhda-2494/?novelty=1">Новинки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Эксклюзивно в ЦУМе" href="/catalog/zhenskaya_odezhda-2493/?labels=tsumruonly">Эксклюзивно в ЦУМе</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Предзаказ" href="/catalog/odezhda-18413/?labels=Pre-order">Предзаказ</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> КАТЕГОРИИ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Вся одежда" href="/catalog/odezhda-18413/">Вся одежда</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Куртки" href="/catalog/woman-kurtki-19719/">Куртки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Пуховики" href="/catalog/puhoviki-19751/">Пуховики</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Свитеры" href="/catalog/sviteryi-19259/">Свитеры</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Кардиганы" href="/catalog/kardiganyi-19258/">Кардиганы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Пуловеры" href="/catalog/pulovery-19888/">Пуловеры</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Водолазки" href="/catalog/vodolazki-19257/">Водолазки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Платья" href="/catalog/platya-18512/">Платья</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Брюки" href="/catalog/bryuki-19226/">Брюки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Блузы" href="/catalog/bluzyi-19241/">Блузы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Футболки" href="/catalog/s-korotkim-rukavom-19745/">Футболки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Жакеты" href="/catalog/jaketyi-19270/?section=19776,19777">Жакеты</a></li>
+													<!---->
+												</ul>
+											</div>
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_top">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Джинсы" href="/catalog/dzhinsy-18491/">Джинсы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Юбки" href="/catalog/yubki-19095/">Юбки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Пальто" href="/catalog/palto-19755/">Пальто</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Бельё" href="/catalog/belye-2532/">Бельё</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Купальники" href="/catalog/women-kupalniki-19691/">Купальники</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Топы" href="/catalog/topyi-19239/">Топы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Шорты" href="/catalog/shorty-18976/">Шорты</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Дубленки" href="/catalog/dlinnye-19900/">Дубленки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Плащи" href="/catalog/plaschi-19907/">Плащи</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Свитшоты" href="/catalog/svitshoty-19700/">Свитшоты</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Домашняя одежда" href="/catalog/women-domashnyaya-odejda-19820/">Домашняя одежда</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> ТОП БРЕНДЫ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Alexander McQueen" href="/catalog/zhenskaya_odezhda-2493/?brand=164355">Alexander McQueen</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Balenciaga" href="/catalog/zhenskaya_odezhda-2493/?brand=167442">Balenciaga</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Balmain" href="/catalog/zhenskaya_odezhda-2493/?brand=708177">Balmain</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Dolce &amp; Gabbana" href="/catalog/zhenskaya_odezhda-2493/?brand=165399">Dolce &amp; Gabbana</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Gucci" href="/catalog/zhenskaya_odezhda-2493/?brand=165201">Gucci</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Chloé" href="/catalog/zhenskaya_odezhda-2493/?brand=164554">Chloé</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Off-White" href="/catalog/zhenskaya_odezhda-2493/?brand=1912018">Off-White</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Saint Laurent" href="/catalog/zhenskaya_odezhda-2493/?brand=436298">Saint Laurent</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Stella McCartney" href="/catalog/zhenskaya_odezhda-2493/?brand=178215">Stella McCartney</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Valentino" href="/catalog/zhenskaya_odezhda-2493/?brand=194835">Valentino</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Tom Ford" href="/catalog/zhenskaya_odezhda-2493/?brand=177180">Tom Ford</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Versace" href="/catalog/zhenskaya_odezhda-2493/?brand=211822">Versace</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-banner ng-star-inserted">
+												<a _ngcontent-frontend-c241="" class="header__subnav-link ng-star-inserted" href="/catalog/odezhda-18413/?brand=165597">
+													<picture _ngcontent-frontend-c241="">
+														<source _ngcontent-frontend-c241="" media="(max-width: 1024px)" srcset="/assets/images/empty.png"><img _ngcontent-frontend-c241="" role="presentation" class="header__subnav-img" src="https://st1.tsum.com/sig/0c340407a2ad3fe47bfd79a5417e0b0e/width/958/photos/4/a/4a50201fb951a8258e33e9c3ec81b813132ef79f.jpg" alt="Баннер Женская одежда" data-gtm-vis-recent-on-screen-339085_1093="1411483" data-gtm-vis-first-on-screen-339085_1093="1411483" data-gtm-vis-total-visible-time-339085_1093="1000" data-gtm-vis-polling-id-339085_1093="63140"></picture>
+												</a>
+												<!---->
+											</div>
+											<!---->
+										</div>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Обувь" href="/catalog/obuv-18405/">Обувь</a>
+										<div _ngcontent-frontend-c241="" class="header__subnav header__subnav-desctop ng-star-inserted" style="display: flex;">
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_bold">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Новинки" href="/catalog/obuv-18405/?novelty=1">Новинки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Эксклюзивно в ЦУМе" href="/catalog/obuv-18405/?labels=tsumruonly">Эксклюзивно в ЦУМе</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Предзаказ" href="/catalog/obuv-18405/?labels=Pre-order">Предзаказ</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> КАТЕГОРИИ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Вся обувь" href="/catalog/obuv-18405/">Вся обувь</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Ботинки и ботильоны" href="/catalog/botinki-i-botilony-20041/">Ботинки и ботильоны</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Кроссовки" href="/catalog/women-sportivnaya-obuv-krossovki-19216/">Кроссовки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Кеды" href="/catalog/women-sportivnaya-obuv-kedy-19217/">Кеды</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Туфли" href="/catalog/tufli-19027/">Туфли</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Сапоги" href="/catalog/women-sapogi-19281/">Сапоги</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Полусапоги" href="/catalog/women-polusapogi-20056/">Полусапоги</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Ботфорты" href="/catalog/botforty-18560/">Ботфорты</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Лоферы" href="/catalog/women-otkrytaya-obuv-lofery-19222/">Лоферы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Шлепанцы" href="/catalog/women-obuv-na-ploskoy-podoshve-shlepantcy-19234/">Шлепанцы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Сандалии" href="/catalog/women-obuv-na-ploskoy-podoshve-sandalii-19235/">Сандалии</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Слипоны" href="/catalog/women-sportivnaya-obuv-slipony-19218/">Слипоны</a></li>
+													<!---->
+												</ul>
+											</div>
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_top">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Мокасины" href="/catalog/women-otkrytaya-obuv-mokasiny-19221/">Мокасины</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Эспадрильи" href="/catalog/women-otkrytaya-obuv-espadrili-19220/">Эспадрильи</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Босоножки" href="/catalog/women-otkrytaya-obuv-bosonozhki-19211/">Босоножки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Мюли" href="/catalog/women-otkrytaya-obuv-myuli-19213/">Мюли</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Балетки" href="/catalog/women-otkrytaya-obuv-baletki-19223/">Балетки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Домашняя обувь" href="/catalog/domashnyaya-obuv-18861/">Домашняя обувь</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Аксессуары для обуви" href="/catalog/aksessuary-dlya-obuvi-19879/">Аксессуары для обуви</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> ТОП БРЕНДЫ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Alexander McQueen" href="/catalog/obuv-18405/?brand=164355">Alexander McQueen</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Balenciaga" href="/catalog/obuv-18405/?brand=167442">Balenciaga</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Bottega Veneta" href="/catalog/obuv-18405/?brand=165597">Bottega Veneta</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Casadei" href="/catalog/obuv-18405/?brand=170371">Casadei</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Chloé" href="/catalog/obuv-18405/?brand=164554">Chloé</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Dolce &amp; Gabbana" href="/catalog/obuv-18405/?brand=165399">Dolce &amp; Gabbana</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Tom Ford" href="/catalog/obuv-18405/?brand=177180">Tom Ford</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Gucci" href="/catalog/obuv-18405/?brand=165201">Gucci</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Jimmy Choo" href="/catalog/obuv-18405/?brand=164894">Jimmy Choo</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Prada" href="/catalog/obuv-18405/?brand=212943">Prada</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Saint Laurent" href="/catalog/obuv-18405/?brand=436298">Saint Laurent</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Valentino Garavani" href="/catalog/obuv-18405/?brand=194835">Valentino Garavani</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-banner ng-star-inserted">
+												<a _ngcontent-frontend-c241="" class="header__subnav-link ng-star-inserted" href="/catalog/obuv-18405/?brand=211822">
+													<picture _ngcontent-frontend-c241="">
+														<source _ngcontent-frontend-c241="" media="(max-width: 1024px)" srcset="/assets/images/empty.png"><img _ngcontent-frontend-c241="" role="presentation" class="header__subnav-img" src="https://st1.tsum.com/sig/faee4863f8e61c9edcee3174c7f21b14/width/958/photos/8/3/83cec92d358dc91275c0f4e8d2521ea16ccdbd62.jpg" alt="Баннер Обувь" data-gtm-vis-polling-id-339085_1093="63141"></picture>
+												</a>
+												<!---->
+											</div>
+											<!---->
+										</div>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Сумки" href="/catalog/sumki-18438/">Сумки</a>
+										<div _ngcontent-frontend-c241="" class="header__subnav header__subnav-desctop ng-star-inserted" style="display: flex;">
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_bold">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Новинки" href="/catalog/sumki/?novelty=1">Новинки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Эксклюзивно в ЦУМе" href="/catalog/sumki/?labels=tsumruonly">Эксклюзивно в ЦУМе</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Предзаказ" href="/catalog/sumki-18438/?labels=Pre-order">Предзаказ</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> КАТЕГОРИИ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Все сумки" href="/catalog/sumki/">Все сумки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Сумки через плечо" href="/catalog/women-sumki-cherez-plecho-19192/">Сумки через плечо</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Сумки top-handle" href="/catalog/women-sumki-top-handle-19193/">Сумки top-handle</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Сумки-шоперы" href="/catalog/women-sumki-sumki-shopery-19194/">Сумки-шоперы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Вечерние сумки" href="/catalog/women-sumki-vechernie-sumki-19286/">Вечерние сумки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Рюкзаки" href="/catalog/ryukzaki-18565/">Рюкзаки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Клатчи" href="/catalog/women-sumki-klatchi-19287/">Клатчи</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Поясные сумки" href="/catalog/poyasnye-sumki-19028/">Поясные сумки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Пляжные сумки" href="/catalog/plyazhnye-sumki-18881/">Пляжные сумки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Чемоданы" href="/catalog/chemodany-18529/">Чемоданы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Дорожные сумки" href="/catalog/dorozhnye-sumki-18528/">Дорожные сумки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Спортивные сумки" href="/catalog/women-sumki-sportivnye-sumki-19206/">Спортивные сумки</a></li>
+													<!---->
+												</ul>
+											</div>
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_top">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Кофры" href="/catalog/kofry-18589/">Кофры</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Аксессуары для сумок" href="/catalog/aksessuary-dlya-sumok-18900/">Аксессуары для сумок</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> ТОП БРЕНДЫ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Balenciaga" href="/catalog/sumki/?brand=167442">Balenciaga</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Balmain" href="/catalog/sumki/?brand=708177">Balmain</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Bottega Veneta" href="/catalog/sumki/?brand=165597">Bottega Veneta</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Burberry" href="/catalog/sumki/?brand=211166">Burberry</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Chloé" href="/catalog/sumki/?brand=164554">Chloé</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Dolce &amp; Gabbana" href="/catalog/sumki/?brand=165399">Dolce &amp; Gabbana</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Givenchy" href="/catalog/sumki/?brand=165209">Givenchy</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Gucci" href="/catalog/sumki/?brand=165201">Gucci</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Off-White" href="/catalog/sumki/?brand=1912018">Off-White</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Saint Laurent" href="/catalog/sumki/?brand=436298">Saint Laurent</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Tom Ford" href="/catalog/sumki/?brand=177180">Tom Ford</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-banner ng-star-inserted">
+												<a _ngcontent-frontend-c241="" class="header__subnav-link ng-star-inserted" href="/catalog/sumki-18438/?brand=194835">
+													<picture _ngcontent-frontend-c241="">
+														<source _ngcontent-frontend-c241="" media="(max-width: 1024px)" srcset="/assets/images/empty.png"><img _ngcontent-frontend-c241="" role="presentation" class="header__subnav-img" src="https://st1.tsum.com/sig/96b890626279af169fb26e610f22c21d/width/958/photos/3/9/39592de7ecebf8be99708a2a37822f953da63df3.jpg" alt="Баннер Сумки" data-gtm-vis-first-on-screen-339085_1093="1357583" data-gtm-vis-total-visible-time-339085_1093="700" data-gtm-vis-recent-on-screen-339085_1093="1411264" data-gtm-vis-polling-id-339085_1093="63142"></picture>
+												</a>
+												<!---->
+											</div>
+											<!---->
+										</div>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Аксессуары" href="/catalog/aksessuary-2404/">Аксессуары</a>
+										<div _ngcontent-frontend-c241="" class="header__subnav header__subnav-desctop ng-star-inserted" style="display: flex;">
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_bold">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Новинки" href="/catalog/aksessuary-2404/?novelty=1">Новинки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Эксклюзивно в ЦУМе" href="/catalog/aksessuary-2404/?other=availability&amp;labels=tsumruonly">Эксклюзивно в ЦУМе</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Предзаказ" href="/catalog/aksessuary-2404/?labels=Pre-order">Предзаказ</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> КАТЕГОРИИ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Все аксессуары" href="/catalog/aksessuary-2404/">Все аксессуары</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Ремни" href="/catalog/women-aksessuary-remni-20038/">Ремни</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Серьги" href="/catalog/sergi-19049/">Серьги</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Колье" href="/catalog/kole-19117/">Колье</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Браслеты" href="/catalog/braslety-18562/">Браслеты</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Кольца" href="/catalog/koltca-18473/">Кольца</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Броши" href="/catalog/broshi-18708/">Броши</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Подвески" href="/catalog/podveski-18924/">Подвески</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Шапки" href="/catalog/shapki-18757/">Шапки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Шляпы" href="/catalog/shlyapy-18942/">Шляпы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Бейсболки" href="/catalog/beisbolki-19098/">Бейсболки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Кепки" href="/catalog/kepki-18980/">Кепки</a></li>
+													<!---->
+												</ul>
+											</div>
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_top">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Береты" href="/catalog/berety-19118/">Береты</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Очки" href="/catalog/ochki-18457/">Очки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Аксессуары из кожи" href="/catalog/aksessuary-iz-kozhi-18566/">Аксессуары из кожи</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Шарфы" href="/catalog/women-aksessuary-sharfy-19469/">Шарфы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Платки" href="/catalog/women-aksessuary-platki-19468/">Платки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Шали" href="/catalog/women-aksessuary-shali-19470/">Шали</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Перчатки" href="/catalog/women-aksessuary-perchatki-19488/">Перчатки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Зонты" href="/catalog/zonty-18435/">Зонты</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Аксессуары для волос" href="/catalog/aksessuary-dlya-volos-18488/">Аксессуары для волос</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Косметички" href="/catalog/kosmetichki-18627/">Косметички</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Маски" href="/catalog/women-aksessuary-maski-19318/">Маски</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Чехлы для техники" href="/catalog/women-aksessuary-dlya-tehniki-19475/">Чехлы для техники</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> ТОП БРЕНДЫ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Alexander McQueen" href="/catalog/aksessuary-2404/?brand=164355">Alexander McQueen</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Balenciaga" href="/catalog/aksessuary-2404/?brand=167442">Balenciaga</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Bottega Veneta" href="/catalog/aksessuary-2404/?brand=165597">Bottega Veneta</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Burberry" href="/catalog/aksessuary-2404/?brand=211166">Burberry</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Fendi" href="/catalog/aksessuary-2404/?brand=741063">Fendi</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Loro Piana" href="/catalog/aksessuary-2404/?brand=164759">Loro Piana</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Off-White" href="/catalog/aksessuary-2404/?brand=1912018">Off-White</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Oscar de la Renta" href="/catalog/aksessuary-2404/?brand=167715">Oscar de la Renta</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Saint Laurent" href="/catalog/aksessuary-2404/?brand=436298">Saint Laurent</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Valentino Garavani" href="/catalog/aksessuary-2404/?brand=194835">Valentino Garavani</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Versace" href="/catalog/aksessuary-2404/?brand=211822">Versace</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-banner ng-star-inserted">
+												<a _ngcontent-frontend-c241="" class="header__subnav-link ng-star-inserted" href="/catalog/aksessuary-2404/?brand=165399">
+													<picture _ngcontent-frontend-c241="">
+														<source _ngcontent-frontend-c241="" media="(max-width: 1024px)" srcset="/assets/images/empty.png"><img _ngcontent-frontend-c241="" role="presentation" class="header__subnav-img" src="https://st2.tsum.com/sig/b53436907587172c3bdc69b5bb612399/width/958/photos/4/1/41c17901b20ead0b03d891604ba6b20399c90144.jpg" alt="Баннер Женские аксессуары" data-gtm-vis-recent-on-screen-339085_1093="1415083" data-gtm-vis-first-on-screen-339085_1093="1415083" data-gtm-vis-total-visible-time-339085_1093="500" data-gtm-vis-polling-id-339085_1093="63143"></picture>
+												</a>
+												<!---->
+											</div>
+											<!---->
+										</div>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Подарочные карты" href="/about/giftcard/buy/">Подарочные карты</a>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Часы" href="/catalog/chasy-18411/">Часы</a>
+										<div _ngcontent-frontend-c241="" class="header__subnav header__subnav-desctop ng-star-inserted" style="display: flex;">
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> ТОП БРЕНДЫ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Breitling" href="/catalog/chasy-18411/?brand=11011887">Breitling</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Chanel" href="/catalog/chasy-18411/?brand=1074423">Chanel</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Chopard" href="/catalog/chasy-18411/?brand=1080693">Chopard</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="de GRISOGONO" href="/catalog/chasy-18411/?brand=1080692">de GRISOGONO</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Girard-Perregaux" href="/catalog/chasy-18411/?brand=1246085">Girard-Perregaux</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Hublot" href="/catalog/chasy-18411/?brand=1224336">Hublot</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Patek Philippe" href="/catalog/chasy-18411/?brand=1224339">Patek Philippe</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="TAG Heuer" href="/catalog/chasy-18411/?brand=11011890">TAG Heuer</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Tudor" href="/catalog/chasy-18411/?brand=11603317">Tudor</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="ULYSSE NARDIN" href="/catalog/chasy-18411/?brand=11054045">ULYSSE NARDIN</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Zenith" href="/catalog/chasy-18411/?brand=1246081">Zenith</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-banner ng-star-inserted">
+												<a _ngcontent-frontend-c241="" class="header__subnav-link ng-star-inserted" href="/catalog/chasy-18411/?brand=1080693">
+													<picture _ngcontent-frontend-c241="">
+														<source _ngcontent-frontend-c241="" media="(max-width: 1024px)" srcset="/assets/images/empty.png"><img _ngcontent-frontend-c241="" role="presentation" class="header__subnav-img" src="https://st2.tsum.com/sig/ea09647750fe8ff8ab963467e10532f8/width/958/photos/6/7/67bae04042e099727e22c39732c13e4cf6ef58f1.jpg" alt="Баннер Женские часы" data-gtm-vis-recent-on-screen-339085_1093="1406237" data-gtm-vis-first-on-screen-339085_1093="1406237" data-gtm-vis-total-visible-time-339085_1093="900" data-gtm-vis-polling-id-339085_1093="63144"></picture>
+												</a>
+												<!---->
+											</div>
+											<!---->
+										</div>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Ювелирные украшения" href="/catalog/yuvelirnye-ukrasheniya-18684/">Ювелирные украшения</a>
+										<div _ngcontent-frontend-c241="" class="header__subnav header__subnav-desctop ng-star-inserted" style="display: flex;">
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> КАТЕГОРИИ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Кольца" href="/catalog/koltca-18857/">Кольца</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Серьги" href="/catalog/sergi-18057/">Серьги</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Браслеты" href="/catalog/braslety-17976/">Браслеты</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Кулоны" href="/catalog/kulony-18059/">Кулоны</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Колье" href="/catalog/kole-18058/">Колье</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Броши" href="/catalog/broshi-18984/">Броши</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> ТОП БРЕНДЫ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Mercury" href="/catalog/yuvelirnye_ukrasheniya-17975/?brand=1337782">Mercury</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Chopard" href="/catalog/yuvelirnye-ukrasheniya-18684/?brand=1080693">Chopard</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Messika" href="/catalog/yuvelirnye_ukrasheniya-17975/?brand=1250999">Messika</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Stephen Webster" href="/catalog/yuvelirnye_ukrasheniya-17975/?brand=1038054">Stephen Webster</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Pasquale Bruni" href="/catalog/yuvelirnye-ukrasheniya-18684/?brand=1568556">Pasquale Bruni</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Garrard" href="/catalog/yuvelirnye-ukrasheniya-18684/?brand=1250996">Garrard</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Chanel" href="/catalog/yuvelirnye-ukrasheniya-18684/?brand=1074423">Chanel</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Roberto Coin" href="/catalog/yuvelirnye-ukrasheniya-18684/?brand=11011888">Roberto Coin</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="David Yurman" href="/catalog/yuvelirnye-ukrasheniya-18684/?brand=1250993">David Yurman</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-banner ng-star-inserted">
+												<a _ngcontent-frontend-c241="" class="header__subnav-link ng-star-inserted" href="/catalog/yuvelirnye_ukrasheniya-17975/?brand=1337782">
+													<picture _ngcontent-frontend-c241="">
+														<source _ngcontent-frontend-c241="" media="(max-width: 1024px)" srcset="/assets/images/empty.png"><img _ngcontent-frontend-c241="" role="presentation" class="header__subnav-img" src="https://st1.tsum.com/sig/68941a4ca1c5978585ee48714eed9804/width/958/photos/b/e/befc837b179020b3c8784f2e67a51dd298f60a11.png" alt="Баннер Ювелирные украшения" data-gtm-vis-recent-on-screen-339085_1093="1410505" data-gtm-vis-first-on-screen-339085_1093="1410505" data-gtm-vis-total-visible-time-339085_1093="500" data-gtm-vis-polling-id-339085_1093="63145"></picture>
+												</a>
+												<!---->
+											</div>
+											<!---->
+										</div>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Косметика" href="/catalog/kosmetika-20130/">Косметика</a>
+										<div _ngcontent-frontend-c241="" class="header__subnav header__subnav-desctop ng-star-inserted" style="display: flex;">
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_bold">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Эксклюзивно в ЦУМе" href="/catalog/kosmetika-20130/?labels=tsumruonly">Эксклюзивно в ЦУМе</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> КАТЕГОРИИ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Вся косметика" href="/catalog/kosmetika-20130/">Вся косметика</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Аксессуары" href="/catalog/aksessuary-20131/">Аксессуары</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Макияж" href="/catalog/makiyazh-20174/">Макияж</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Парфюмерия" href="/catalog/parfyumeriya-20204/">Парфюмерия</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Уход за волосами" href="/catalog/ukhod-za-volosami-20213/">Уход за волосами</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Уход за кожей" href="/catalog/ukhod-za-kozhey-20214/">Уход за кожей</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Уход за ногтями" href="/catalog/ukhod-za-nogtyami-20215/">Уход за ногтями</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Уход за полостью рта" href="/catalog/ukhod-za-polostyu-rta-20216/">Уход за полостью рта</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> ТОП БРЕНДЫ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Aesop" href="/catalog/kosmetika-20130/?brand=2648388">Aesop</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Anne Semonin" href="/catalog/kosmetika-20130/?brand=1513829">Anne Semonin</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Dolce &amp; Gabbana" href="/catalog/kosmetika-20130/?brand=165399">Dolce &amp; Gabbana</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Hermès" href="/catalog/kosmetika-20130/?brand=1537690">Hermès</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Jo Malone London" href="/catalog/kosmetika-20130/?brand=6388745">Jo Malone London</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Kilian" href="/catalog/kosmetika-20130/?brand=1244333">Kilian</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="La Mer" href="/catalog/kosmetika-20130/?brand=1700025">La Mer</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="La Prairie" href="/catalog/kosmetika-20130/?brand=1262565">La Prairie</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Maison Francis Kurkdjian" href="/catalog/kosmetika-20130/?brand=1513816">Maison Francis Kurkdjian</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Tom Ford" href="/catalog/kosmetika-20130/?brand=177180">Tom Ford</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Valmont" href="/catalog/kosmetika-20130/?brand=1696198">Valmont</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-banner ng-star-inserted">
+												<a _ngcontent-frontend-c241="" class="header__subnav-link ng-star-inserted" href="/brand/la_mer-64334.html">
+													<picture _ngcontent-frontend-c241="">
+														<source _ngcontent-frontend-c241="" media="(max-width: 1024px)" srcset="/assets/images/empty.png"><img _ngcontent-frontend-c241="" role="presentation" class="header__subnav-img" src="https://st1.tsum.com/sig/66e5a00849de6b1f2aea649e25a4c913/width/958/photos/0/1/013b7fa0a261534a9495740cd16bd4e9ec7a092a.jpg" alt="Баннер Женская косметика" data-gtm-vis-recent-on-screen-339085_1093="1419733" data-gtm-vis-first-on-screen-339085_1093="1419733" data-gtm-vis-total-visible-time-339085_1093="1200" data-gtm-vis-has-fired-339085_1093="1"></picture>
+												</a>
+												<!---->
+											</div>
+											<!---->
+										</div>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Apple" href="/catalog/women-apple-20150/">Apple</a>
+										<div _ngcontent-frontend-c241="" class="header__subnav header__subnav-desctop ng-star-inserted">
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> КАТЕГОРИИ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="iPhone" href="/catalog/women-apple-iphone-20354/">iPhone</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="iPad" href="/catalog/women-apple-ipad-20340/">iPad</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Apple Watch" href="/catalog/women-apple-watch-20329/">Apple Watch</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="MacBook" href="/catalog/women-apple-macbook-20316/">MacBook</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="iMac" href="/catalog/women-apple-imac-20308/">iMac</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Apple TV" href="/catalog/women-apple-apple-tv-20298/">Apple TV</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Аудио" href="/catalog/women-apple-audio-20284/">Аудио</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Аксессуары" href="/catalog/women-apple-aksessuary-20152/">Аксессуары</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> АКСЕССУАРЫ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Чехлы для iPhone" href="/catalog/women-apple-chekhly-dlya-iphone-20269/">Чехлы для iPhone</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Чехлы для iPad" href="/catalog/women-apple-chekhly-dlya-ipad-20246/">Чехлы для iPad</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Чехлы для MacBook" href="/catalog/women-apple-chekhly-dlya-macbook-20236/">Чехлы для MacBook</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Чехлы для Airpods" href="/catalog/women-apple-chekhly-dlya-airpods-20234/">Чехлы для Airpods</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Ремешки" href="/catalog/women-apple-remeshki-20232/">Ремешки</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Стёкла" href="/catalog/women-apple-stekla-20206/">Стёкла</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Автомобильные аксессуары" href="/catalog/women-apple-avtomobilnye-aksessuary-20203/">Автомобильные аксессуары</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Беспроводные зарядные устройства" href="/catalog/women-apple-besprovodnye-zaryadki-20173/">Беспроводные зарядные устройства</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Внешние накопители" href="/catalog/women-apple-vneshnie-nakopiteli-20171/">Внешние накопители</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Dock-станции" href="/catalog/women-apple-dock-stantcii-20169/">Dock-станции</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Кабели и адаптеры" href="/catalog/women-apple-kabeli-i-adaptery-20167/">Кабели и адаптеры</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Камеры" href="/catalog/women-apple-kamery-20164/">Камеры</a></li>
+													<!---->
+												</ul>
+											</div>
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_top">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Моноподы" href="/catalog/women-apple-monopody-20163/">Моноподы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Портативные батареи" href="/catalog/women-apple-portativnye-batarei-20161/">Портативные батареи</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Умный дом" href="/catalog/women-apple-umnyi-dom-20158/">Умный дом</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Устройства ввода" href="/catalog/women-apple-ustroistva-vvoda-20156/">Устройства ввода</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-banner ng-star-inserted">
+												<!---->
+											</div>
+											<!---->
+										</div>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Интерьер" href="/catalog/women-interior-20364/">Интерьер</a>
+										<div _ngcontent-frontend-c241="" class="header__subnav header__subnav-desctop ng-star-inserted">
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> КАТЕГОРИИ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Аксессуары для дома" href="/catalog/women-aksessuary-dlya-doma-20376/">Аксессуары для дома</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Аксессуары для животных" href="/catalog/women-aksessuary-dlya-jivotnyh-20519/">Аксессуары для животных</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Аксессуары для кабинета" href="/catalog/women-aksessuary-dlya-kabineta-20390/">Аксессуары для кабинета</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Ароматы для дома" href="/catalog/women-aromaty-dlya-doma-20366/">Ароматы для дома</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Барная посуда" href="/catalog/women-barnaya-posuda-20483/">Барная посуда</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Вазы" href="/catalog/women-vazy-20402/">Вазы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Освещение" href="/catalog/women-osveshchenie-20408/">Освещение</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Посуда и аксессуары для детей" href="/catalog/women-posuda-i-aksessuary-dlya-detey-20420/">Посуда и аксессуары для детей</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Сервировка" href="/catalog/women-servirovka-20447/">Сервировка</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Скульптуры" href="/catalog/women-skulptury-20426/">Скульптуры</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Столовые приборы" href="/catalog/women-stolovye-pribory-20455/">Столовые приборы</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Текстиль" href="/catalog/women-tekstil-20527/">Текстиль</a></li>
+													<!---->
+												</ul>
+											</div>
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list header__subnav-list_style_top">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Новый год" href="/catalog/women-noviy-god-20646/">Новый год</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> ТОП БРЕНДЫ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Baccarat" href="/brand/women-interior-20364/baccarat.html">Baccarat</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Bernardaud" href="/brand/zhenskoe-18368/bernardaud.html">Bernardaud</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Christofle" href="/brand/zhenskoe-18368/christofle.html">Christofle</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Daum" href="/brand/zhenskoe-18368/daum.html">Daum</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Dr. Vranjes Firenze" href="/brand/women-aromaty-dlya-doma-20366/dr_vranjes-518032.html">Dr. Vranjes Firenze</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Lalique" href="/brand/zhenskoe-18368/lalique.html">Lalique</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Swarovski" href="/brand/women-interior-20364/swarovski-382864.html">Swarovski</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Tsar" href="/brand/women-interior-20364/tsar-86720.html">Tsar</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Ralph Lauren" href="/brand/women-interior-20364/ralph_lauren-70279.html">Ralph Lauren</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-col ng-star-inserted">
+												<div _ngcontent-frontend-c241="" class="header__subnav-heading ng-star-inserted"> ПОДАРКИ </div>
+												<!---->
+												<ul _ngcontent-frontend-c241="" class="header__subnav-list">
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Для него" href="/catalog/sel/for-him/">Для него</a></li>
+													<li _ngcontent-frontend-c241="" class="header__subnav-item ng-star-inserted"><a _ngcontent-frontend-c241="" class="header__subnav-link" title="Для неё" href="/catalog/sel/home-goods-for-her/">Для неё</a></li>
+													<!---->
+												</ul>
+											</div>
+											<!---->
+											<!---->
+											<!---->
+											<div _ngcontent-frontend-c241="" class="header__subnav-banner ng-star-inserted">
+												<!---->
+											</div>
+											<!---->
+										</div>
+										<!---->
+									</li>
+									<li _ngcontent-frontend-c242="" main-menu-desktop-item="" data-testid="HeaderItem" class="header__item header__item-level-1 ng-tns-c242-0 ng-star-inserted" _nghost-frontend-c241="" style=""><a _ngcontent-frontend-c241="" class="header__link header__link_type_nav" title="Новости" href="/news/">Новости</a>
+										<!---->
+									</li>
+									<!---->
+									<li _ngcontent-frontend-c242="" class="header__item header__item_type_phone ng-tns-c242-0">
+										<a _ngcontent-frontend-c242="" href="tel:74959337300" class="header__link header__link_type_nav ng-tns-c242-0">
+											<svg _ngcontent-frontend-c242="" class="header__phone-icon ng-tns-c242-0">
+												<use _ngcontent-frontend-c242="" xlink:href="#icon_phone" class="ng-tns-c242-0"></use>
+											</svg><span _ngcontent-frontend-c242="" class="header__phone-number ng-tns-c242-0">+7 495 933 73 00</span></a>
+									</li>
+								</ul>
+							</main-menu-desktop>
+							<!---->
+						</div>
+					</div>
+				</div>
+			</main-menu>
+		</div>
+		<!---->
+		
+	</div>
+</header>

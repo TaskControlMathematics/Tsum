@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- <link rel = "stylesheet" href = "{% static 'css/style_main.css' %}">
+    <link rel = "stylesheet" href = "{% static 'css/style_product.css' %}">
+    <link rel="stylesheet" href="{% static 'css/style_checkout.css' %}">
+    <link rel="stylesheet" href="{%  static 'css/bootstrap.css' %}">
+    <link rel="stylesheet" href="{%  static 'css/style_catalog.css' %}">
+    <link rel = "stylesheet" href = "{% static 'css/registred_style.css' %}"> -->
+
+
+    <title>{% block title %}My site{% endblock %}</title>
+</head>
+<body>
+{% include 'header.html' %}
+
+{% block content %} {% endblock %}
+
+
+
+<!-- <script src="{% static 'js/jquery-3.5.0.js' %}"></script>
+<script src="{% static 'js/popper.min.js' %}" ></script>
+<script src="{% static 'js/scripts.js' %}"></script>
+<script src="{% static 'js/navbar_js.js' %}"></script>
+<script src="{% static 'js/checkout_js.js' %}"></script>
+<script src="{% static 'js/main_js.js' %}"></script>
+<script src="{% static 'js/catalog_js.js' %}"></script> -->
+</body>
+</html>

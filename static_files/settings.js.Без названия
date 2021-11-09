@@ -1,0 +1,6 @@
+const CHAT_GLOBAL_SETTING = {
+    ORIGIN: 'https://www.tsum.ru',
+    CDN_ORIGIN: 'https://st.tsum.com',
+    VERSION: '2.1.5',
+    APP_ID: '28a939a1734d4ce7a99e37e44b0a6a67'
+};
